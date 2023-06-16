@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E158.Views.PageVisitas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="foto" WidthRequest="100" HeightRequest="200"/>
+
+            <Button x:Name="btnfoto" Text="Capturar Imagen" Clicked="btnfoto_Clicked"/>
+
+            <Button Command="{Binding LocalizameCommand}" Text="Localizame"></Button>
+            <Label  Text="Longitud"></Label>
+            <Entry x:Name="longitud" Text="{Binding Longitud}"></Entry>
+            <Label Text="Latitud"></Label>
+            <Entry x:Name="latitud" Text="{Binding Latitud}"></Entry>
+            <Label Text="{Binding Error}" TextColor="Red"></Label>
+
+            <Entry x:Name="Desc" Placeholder="Descripcion" MaxLength="200"/>
+
+            <Button x:Name="btnguardar" Text="Guardar" Clicked="btnguardar_Clicked"/>
+
+            <Button x:Name="lista" Text="Lista Sitios" Clicked="lista_Clicked"/>
+            
+             
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
